@@ -2,7 +2,7 @@
 local typedefs      = require "kong.db.schema.typedefs"
 
 return {
-  name = "backend-oidc",
+  name = "backend-token-creation",
   fields = {
     { consumer = typedefs.no_consumer },
     { protocols = typedefs.protocols_http },
