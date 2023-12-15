@@ -10,7 +10,7 @@ local plugin = {
 function plugin:access(plugin_conf)
 
    local httpc = http.new()
-   local res, err = httpc:request_uri("https://sso.apim.eu:8443/auth/realms/steffen/protocol/openid-connect/token", {
+   local res, err = httpc:request_uri(plugin_conf.server_url, {
      method = "POST",
      body = "grant_type=client_credentials&client_id=" .. plugin_conf.client_id .. "&client_secret=" .. plugin_conf.client_secret .. "&scope=" .. plugin_conf.scope,
      headers = {

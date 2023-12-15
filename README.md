@@ -17,6 +17,20 @@ plugins:
 ```
 
 4) add custom plugin to Konnect control plane
-![Alt text](images/custom-plugin.png?raw=true "Kong - Plugin")
+    - Select Plugins and ```New Plugin``` Button
+    - select ```Custom Plugins``` and ```create```
+ ![Alt text](images/custom-plugin.png?raw=true "Kong - Plugin")
 
+    - select the ```schema.lua``` file and click ```save```
+![Alt text](images/create-custom-plugin.png?raw=true "Kong - Plugin")
+- now the plugin is available in this control plane.
+
+## How to use th plugin
+
+1) Select the route or service where you want to add the plugin
+2) Configure the plugin with 
+   1) Server URL of the token endpoint
+   2) Client ID
+   3) Client Secret and if needed
+   4) Scope(s)
 
