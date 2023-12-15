@@ -10,6 +10,9 @@ kubectl create configmap backend-token --from-file=./github/kong-plugin-backend-
 
 3) in the values.yaml of the Kong Gateway data plane add:
 ```
+
+env:
+    plugins: backend-token-creation
 plugins: 
   configMaps:
   - name: bbackend-token-creation
@@ -25,7 +28,7 @@ plugins:
 ![Alt text](images/create-custom-plugin.png?raw=true "Kong - Plugin")
 - now the plugin is available in this control plane.
 
-## How to use th plugin
+## How to use the plugin
 
 1) Select the route or service where you want to add the plugin
 2) Configure the plugin with 
@@ -34,3 +37,4 @@ plugins:
    3) Client Secret and if needed
    4) Scope(s)
 
+![Alt text](images/configure-plugin.png?raw=true "Kong - Plugin")
