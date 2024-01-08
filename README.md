@@ -32,9 +32,10 @@ plugins:
 
 1) Select the route or service where you want to add the plugin
 2) Configure the plugin with 
-   1) Server URL of the token endpoint
+   1) Token URL of the token endpoint
    2) Client ID
    3) Client Secret and if needed
    4) Scope(s)
+   5) Credentials send in
 
 ![Alt text](images/configure-plugin.png?raw=true "Kong - Plugin")
