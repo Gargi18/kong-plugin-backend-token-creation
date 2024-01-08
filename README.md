@@ -36,6 +36,6 @@ plugins:
    2) Client ID
    3) Client Secret and if needed
    4) Scope(s)
-   5) Credentials send in
+   5) Credentials send in Auth header or body
 
 ![Alt text](images/configure-plugin.png?raw=true "Kong - Plugin")
