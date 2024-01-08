@@ -9,11 +9,13 @@ return {
     { config = {
         type = "record",
         fields = {
-          { server_url = { type = "string", required = true }, },
+          { token_url = { type = "string", required = true }, },
           { client_id = { type = "string", required = true }, },
           { client_secret = { type = "string", required = false }, },
           { scope = { type = "string", required = false }, },
-        },
+          { ssl_verify = { type = "boolean", default = true, }, },
+          { credentials_send_in = {type = "string", default = "auth header", required = true, one_of = { "auth header", "body" },}, },
+        }
     }, },
   },
 }
