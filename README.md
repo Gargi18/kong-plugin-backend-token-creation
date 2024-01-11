@@ -1,4 +1,6 @@
 # kong-plugin-backend-token-creation
+**This code is just an example on how custom plugins are developed.**
+**`#0969DA`This is not supported by Kong or meant to be used in any production environment.**
 
 ## How deploy this plugins
 
