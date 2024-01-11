@@ -15,6 +15,8 @@ return {
           { scope = { type = "string", required = false }, },
           { ssl_verify = { type = "boolean", default = true, }, },
           { credentials_send_in = {type = "string", default = "auth header", required = true, one_of = { "auth header", "body" },}, },
+          { upstream_appid_header_name = { type = "string", required = false, default="myappid" }, },
+          { upstream_appid_header_value = { type = "string", required = false, default="appid" }, },
         }
     }, },
   },
